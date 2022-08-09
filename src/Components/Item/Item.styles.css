@@ -1,0 +1,137 @@
+.product_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 172px;
+    max-width: 172px;
+    object-fit: cover;
+    margin-right: 1rem;    
+}
+
+.off_card {
+    background: var(--global-secondary-color);
+    width: 62px;
+    height: 55px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 1;
+    color: var(--global-white);
+    text-align: end;
+    font-size: 10px;
+}
+
+.off_card > p{
+    margin-right: 8px;
+}
+    
+.off_card > img {
+    width: 100%;
+    max-height: 151px;
+}
+
+.productName_card {
+    color: var(--global-color-font-secondary);
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.listPrice_card {
+    color: var(--global-color-font-secondary);
+    font-size: 11px;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.price_card {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 0.2rem;
+}
+
+.installments_card {
+    color: var(--global-color-font-secondary);
+    font-size: 11px;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+.button_card {   
+    width: 100%; 
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--global-primary-color);
+    color: var(--global-white);
+    cursor: pointer;
+}
+
+.button_card:hover{
+    background: #333333;
+} 
+
+.none {
+    opacity: 0;
+}
+@media (min-width: 900px) {
+    .product_card {
+        max-width: 100%;
+        width: 216px;
+        padding-bottom: 14.41px;
+        margin-right: 5.15vw;
+    }    
+
+    .product_card:hover {
+        background: var(--global-bg-product-card);
+    }          
+        
+    .product_card > img {
+        max-height: 200px;
+        width: 100%;
+    }
+
+    .productName_card,
+    .listPrice_card {
+        font-size: 12px;
+    }
+
+    .price_card {
+        font-size: 18px;
+    }
+
+    .button_card{
+        opacity: 0;
+    }
+
+    .product_card:hover > .button_card {
+        width: 70%;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5.57px;
+        background: var(--global-primary-color);
+        color: var(--global-white);
+    }
+    
+    .product_card:hover > .button_card:hover{
+        background: #333333;
+    }
+
+    .off_card{
+        width: 81px;
+        height: 72px;
+        font-weight: 900;
+        font-size: 16px;
+    }
+}

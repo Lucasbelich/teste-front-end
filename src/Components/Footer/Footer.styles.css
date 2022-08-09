@@ -1,0 +1,129 @@
+.footer_container {
+    background: var(--global-primary-color);
+    padding: 0.2rem 27px;
+}
+
+.footer_ubication_container {     
+    color: var(--global-white);
+}
+
+.footer_ubication_container > h2 {     
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+.footer_ubication_container > p {    
+    width: 40px;
+    height: 3.5px;
+    background: var(--global-white);
+    margin-top: -5px;    
+    margin-bottom: -15px;    
+} 
+
+.footer_ubication_container > div {
+    font-size: 13px;
+    font-weight: 300;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.footer_button_container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem; 
+    width: 100%;
+}
+
+.footer_button_container > button {
+    font-size: 12px;
+    font-weight: 500;
+    height: 51px;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+    max-width: 264px;
+    cursor: pointer;    
+}
+
+.footer_button_secondary {
+    align-items: center;
+    background: var(--global-white);
+    border: none;
+    border-radius: 5px;
+    color: var(--global-primary-color);    
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    max-height: 51px;
+    min-height: 44px;
+    width: 100%;
+}
+
+.footer_button_container > button > img {
+    margin-left: 1rem;
+}
+
+.footer_button_container > button > p {
+    width: 100%; 
+       
+}
+
+.footer_logo_container {
+    color: var(--global-white);    
+    display: flex;
+    font-size: 10px;
+    font-weight: 300;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.footer_logo_container > div {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.footer_corebiz > p {
+    margin-bottom: 1px
+}
+
+.footer_corebiz{
+    margin-right: 10%;
+}
+
+.footer_corebiz > img {
+    width: 100px;
+    
+}
+
+.footer_vtex > p {
+    margin-bottom: 4px
+}
+
+.footer_vtex > a > img {
+    position: relative;    
+    width: 65px;
+    
+}
+
+@media (min-width: 900px) {
+    .footer_container{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 15vw;
+    }
+    .footer_ubication_container > h2 {
+        font-size: 22px;
+    }
+    
+    .footer_ubication_container > ul {
+        font-size: 15px;
+    }
+    .footer_logo_container{
+        max-width: 200px
+    }
+}

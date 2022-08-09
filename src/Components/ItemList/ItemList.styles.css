@@ -1,0 +1,87 @@
+.itemList_container {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    min-height: 370px;    
+}
+
+.itemList_container > div:first-child {
+    overflow: hidden;
+}
+
+.card_container {
+    width: 100%;
+    display: -webkit-inline-box;
+    align-items: flex-end;
+    gap: 30px
+}
+
+.input_container {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.input_container > input {
+    width: 9px;
+    height: 9px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
+    transition: 0.2s all linear;
+    border-radius: 50%;
+    background:#BDBDBD
+}
+
+.input_container > input:hover {
+    background: var(--global-secondary-color);
+    cursor: pointer;    
+}
+
+.button_arrow {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .itemList_container {
+        max-width: 100%;
+    }
+
+    .input_container {
+        display: none;
+    }
+
+    .itemList_container > div:first-child {
+        width: 100%;
+        position: relative;
+        left: 2rem;
+    }
+
+    .button_arrow {
+        display: block;
+        border: none;
+        background: transparent;
+        position: absolute;
+        max-width: 40px;
+        top: 50%;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .button_arrow >img{
+        width: 12px;
+        height: 22px;
+    }
+
+    .left{
+        left: 0;            
+    } 
+}
+    

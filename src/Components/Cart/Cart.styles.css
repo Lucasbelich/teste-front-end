@@ -1,0 +1,24 @@
+.cart_container {
+    position: relative;
+    display: flex;
+}
+.cart_button {
+    border: none;
+    background: transparent;
+    object-fit: cover;
+}
+.cart_button > img {
+    width: 20px;
+}
+.cart_count {
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    color: var(--global-white);
+    background: var(--global-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;        
+}

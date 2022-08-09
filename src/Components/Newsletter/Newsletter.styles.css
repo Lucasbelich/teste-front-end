@@ -1,0 +1,96 @@
+.newsletter_container {
+    background: var(--global-bg-product-card);
+    padding: 0.2rem 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+.newsletter_container > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+    gap: 2px
+}
+
+.newsletter_container > form > div > input {
+    width: 100%;
+    min-height: 52px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.newsletter_container > form > input::placeholder {
+    font-size: 12px;
+}
+.newsletter_container > form > button {
+    height: 52px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background: var(--global-primary-color);
+    color: var(--global-white);
+    cursor: pointer;
+    font-weight: 700;
+}
+.newsletter_container > button {
+    padding: 5px 50px 5px 50px;
+    display: flex;
+    height: 35px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background: var(--global-primary-color);
+    color: var(--global-white);
+    cursor: pointer;
+    font-weight: 700;
+    overflow: hidden;   
+    margin-bottom: 25px;   
+}
+.newsletter_container > p:nth-child(1) {
+    margin-top: 20px;
+    font-size: 12px;    
+    font-weight: 400;    
+}
+.newsletter_container > p:nth-child(2) {
+    font-size:12px;
+    margin-top:-10px
+
+}
+.newsletter_container > form > div > div {
+    font-size: 10px;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px
+} 
+        
+@media (min-width: 900px) {    
+    .newsletter_container > form {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .newsletter_container > form > div> input {
+        width: 280px;
+        margin-right: 8px;
+    }
+    .newsletter_container > form > button {
+        width: 140px; 
+        font-size: 15px;               
+        font-weight: 700;
+        height: 52px;        
+    }
+    .newsletter_container > form > button:hover{
+        background: #333333;
+    }
+    .newsletter_container > h1{
+        font-weight: 700;
+        font-size: 22px;
+        width: 600px;
+    }
+    
+}
+    
+
+    
